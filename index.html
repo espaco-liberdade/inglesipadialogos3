@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Diálogo 03 – Aeroporto, Imigração, Hotel e Viagem Internacional (104 Frases)</title>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- RESET E BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            padding: 20px 10px;
+        }
+
+        /* --- CONTAINER PRINCIPAL --- */
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        /* --- TIPOGRAFIA --- */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2980b9;
+            line-height: 1.3;
+        }
+        
+        h2 { 
+            color: #1f618d; 
+            margin-top: 35px; 
+            margin-bottom: 15px; 
+            font-size: 1.4rem; 
+            border-bottom: 2px solid #ebf5fb; 
+            padding-bottom: 8px;
+            page-break-after: avoid;
+        }
+
+        p { font-size: 1rem; margin-bottom: 10px; color: #444; }
+        .emoji-large { font-size: 1.4rem; }
+
+        /* --- BARRA DE BOTÕES SUPERIOR E INFERIOR (MENU + PDF) --- */
+        .top-actions {
+            display: flex;
+            gap: 12px;
+            margin: 10px 0 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            flex: 1;
+            min-width: 220px;
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.25s ease, transform 0.1s;
+        }
+        .nav-btn:hover { background-color: #2c3e50; }
+        .nav-btn:active { transform: scale(0.99); }
+
+        .pdf-btn {
+            flex: 1;
+            min-width: 220px;
+            background-color: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 14px 18px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.25s ease, transform 0.1s;
+            box-shadow: 0 3px 10px rgba(192, 57, 43, 0.25);
+        }
+        .pdf-btn:hover { background-color: #a93226; }
+        .pdf-btn:active { transform: scale(0.99); }
+
+        /* --- INTRODUÇÃO E CONTROLES --- */
+        .theme-intro {
+            background-color: #ebf5fb;
+            border-left: 5px solid #2980b9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+
+        .stats-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .speaker-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.88rem;
+        }
+
+        .pill-br { background-color: #e8f8f5; color: #0e6251; border: 1px solid #a3e4d7; }
+        .pill-us { background-color: #ebf5fb; color: #1f618d; border: 1px solid #85c1e9; }
+
+        /* --- BARRA DE PESQUISA --- */
+        .search-box { margin: 20px 0; }
+        .search-input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1rem;
+            border: 2px solid #dcdde1;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus {
+            outline: none;
+            border-color: #2980b9;
+        }
+
+        /* --- CABEÇALHOS DOS ATOS E ÁUDIO --- */
+        .act-header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 35px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ebf5fb;
+        }
+
+        .act-title {
+            color: #1f618d;
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .play-act-btn {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .play-act-btn:hover { background-color: #1f618d; }
+        .play-act-btn.stop { background-color: #e74c3c; }
+
+        .audio-btn-inline {
+            background: #eef6fc;
+            border: 1px solid #cce3f6;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.05rem;
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            margin-left: 8px;
+            transition: transform 0.1s, background-color 0.2s;
+        }
+        .audio-btn-inline:hover { background: #2980b9; color: #fff; }
+        .audio-btn-inline:active { transform: scale(0.9); }
+
+        /* --- TABELAS DE DIÁLOGO --- */
+        .table-responsive-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 28px;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 680px;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 14px;
+            font-size: 0.9rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+            font-size: 0.95rem;
+        }
+
+        tr.row-br { background-color: #fafffd; border-left: 4px solid #16a085; }
+        tr.row-us { background-color: #f8fbff; border-left: 4px solid #2980b9; }
+        tr:hover { background-color: #fef9e7; }
+
+        .speaker-tag {
+            display: inline-block;
+            font-size: 0.76rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .speaker-br { background-color: #d1f2eb; color: #0e6251; }
+        .speaker-us { background-color: #d6eaf8; color: #1b4f72; }
+
+        .turn-num {
+            font-weight: 800;
+            color: #7f8c8d;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        .sentence-en {
+            font-weight: 600;
+            color: #1e293b;
+            font-size: 1.03rem;
+            display: inline;
+        }
+
+        .sentence-en b {
+            color: #c0392b;
+            background-color: #fdedec;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .ipa-symbol {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #c0392b;
+            font-size: 0.84rem;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        
+        .character-portuguese-phonetics {
+            display: block;
+            color: #27ae60;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 0.87rem;
+            margin-bottom: 5px;
+        }
+
+        .details-translation {
+            display: block;
+            color: #222;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+
+        .teacher-tip {
+            display: block;
+            margin-top: 7px;
+            padding-top: 6px;
+            border-top: 1px dashed #cbd5e1;
+            color: #475569;
+            font-size: 0.84rem;
+        }
+
+        .teacher-tip strong { color: #1f618d; }
+
+        /* --- RESPONSIVIDADE MOBILE --- */
+        @media (max-width: 720px) {
+            .container { padding: 15px; }
+            h1 { font-size: 1.45rem; }
+            table { min-width: 100%; }
+            .dialogue-table thead { display: none; }
+            .dialogue-table tr {
+                display: block;
+                border-bottom: 2px solid #e0e0e0;
+                padding: 10px 0;
+            }
+            .dialogue-table td {
+                display: block;
+                width: 100%;
+                border: none;
+                padding: 6px 12px;
+            }
+        }
+
+        /* --- IMPRESSÃO A4 EM PDF --- */
+        @media print {
+            body { background-color: #fff; padding: 0; font-size: 9.5pt; }
+            .container { box-shadow: none; max-width: 100%; padding: 0; }
+            .top-actions, .audio-btn-inline, .play-act-btn, .search-box { display: none !important; }
+            tr, .theme-intro { page-break-inside: avoid; }
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- BARRA DE BOTÕES NO TOPO: MENU PRINCIPAL + SALVAR COMO PDF -->
+        <div class="top-actions">
+            <button class="nav-btn" onclick="window.location.href='https://espaco-liberdade.github.io/inglesipa/'">⬅ Voltar ao Menu Principal</button>
+            <button class="pdf-btn" onclick="window.print()">🖨️ Salvar como PDF (A4)</button>
+        </div>
+
+        <h1>Diálogo 03 – Aeroporto, Imigração, Hotel e Viagem Internacional<br><span style="font-size: 0.72em; color: #1f618d;">Jornada Completa no Exterior (104 Frases do Básico ao Avançado)</span> <span class="emoji-large">✈️🛂🏨</span></h1>
+
+        <div class="theme-intro">
+            <p><strong>Sobrevivência e Fluência em Viagens Internacionais!</strong></p>
+            <p>Nesta aula prática, você vai acompanhar a jornada completa de <strong>Bruno (um viajante brasileiro embarcando para os Estados Unidos)</strong> interagindo com <strong>Claire (atendente da companhia aérea, oficial de imigração e recepcionista do hotel em Orlando/Miami)</strong>.</p>
+            <p>A conversa progride naturalmente em <strong>5 Atos (do Básico ao Avançado)</strong>: desde o check-in no aeroporto, escolha de assento (<em>window vs. aisle seat</em>) e despacho de bagagem, passando pela temida entrevista na <strong>Imigração e Alfândega dos EUA</strong>, resolução de mala atrasada na esteira (<em>baggage claim</em>), aluguel de carro, até o check-in no hotel, resolução de problemas no quarto e check-out!</p>
+        </div>
+
+        <div class="stats-bar">
+            <div>
+                <span class="speaker-pill pill-br">🇧🇷 Bruno (Viajante Brasileiro): 52 Falas</span>
+                <span class="speaker-pill pill-us">🇺🇸 Claire (Aeroporto / Imigração / Hotel): 52 Falas</span>
+            </div>
+            <div style="font-size: 0.9rem; color: #555; font-weight: 600;">
+                🎧 Total: <strong>104 Frases com Áudio, IPA, Fonética, Tradução e Dicas do Professor</strong>
+            </div>
+        </div>
+
+        <!-- BARRA DE PESQUISA -->
+        <div class="search-box">
+            <input type="text" id="dialogueSearch" class="search-input" placeholder="🔍 Pesquisar nas 104 frases da viagem (ex: passport, customs, luggage, boarding pass, window, hotel, check-in, deposit)..." onkeyup="filterDialogue()">
+        </div>
+
+        <!-- CONTAINER DOS 5 ATOS DO DIÁLOGO (104 FALAS) -->
+        <div id="dialogue-container"></div>
+
+        <!-- BARRA DE BOTÕES NO RODAPÉ: MENU PRINCIPAL + SALVAR COMO PDF -->
+        <div class="top-actions" style="margin-top: 30px;">
+            <button class="nav-btn" onclick="window.location.href='https://espaco-liberdade.github.io/inglesipa/'">⬅ Voltar ao Menu Principal</button>
+            <button class="pdf-btn" onclick="window.print()">🖨️ Salvar como PDF (A4)</button>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================================
+        // BASE COMPLETA: 104 FALAS (52 DO BRASILEIRO BRUNO + 52 DA ATENDENTE CLAIRE)
+        // ímpares = BR (Bruno) | pares = US (Claire)
+        // ============================================================================
+        const dialogueActs = [
+            {
+                actId: 1,
+                title: "Ato 1: No Balcão de Check-in, Bagagens e Assento no Avião (Nível Básico – Falas #1 a #20)",
+                items: [
+                    [1, "BR", "Good morning! I'd like to <b>check in</b> for my flight to Orlando, please.", "/ɡʊd ˈmɔːrnɪŋ | aɪd laɪk tə tʃek ɪn fɔːr maɪ flaɪt tuː ɔːrˈlændoʊ pliːz/", "(Gúd mór-nin! Áid láic tu tchéc in fór mai fláit tu Or-lén-dôu, plíiz)", "Bom dia! Eu gostaria de fazer o check-in para o meu voo para Orlando, por favor.", "<strong>Polidez de Ouro:</strong> Usar <em>'I'd like to'</em> (Eu gostaria de) soa muito mais educado do que <em>'I want to'</em> no aeroporto."],
+                    [2, "US", "Good morning, sir! May I see your <b>passport</b> and booking confirmation?", "/ɡʊd ˈmɔːrnɪŋ sɜːr | meɪ aɪ siː jɔːr ˈpæspɔːrt ænd ˈbʊkɪŋ ˌkɑːnfərˈmeɪʃn/", "(Gúd mór-nin, sâr! Mêi ai síi iór pés-pórt énd bú-quin cón-for-mêi-xãn?)", "Bom dia, senhor! Posso ver o seu passaporte e a confirmação da reserva?", "<strong>Vocabulário de Viagem:</strong> Reserva de voo ou hotel em inglês é <strong>booking</strong> ou <strong>reservation</strong>."],
+                    [3, "BR", "Here is my passport. Do you also need to see my printed <b>ticket</b>?", "/hɪr ɪz maɪ ˈpæspɔːrt | duː juː ˈɔːlsoʊ niːd tə siː maɪ ˈprɪntɪd ˈtɪkɪt/", "(Ríher iz mai pés-pórt. Du iu óu-sôu níid tu síi mai prín-ted tí-quet?)", "Aqui está o meu passaporte. Você também precisa ver a minha passagem impressa?", "<strong>Pronúncia de 'Printed':</strong> Como <em>print</em> termina com T, o passado/particípio ganha uma sílaba extra: <em>prín-ted</em>."],
+                    [4, "US", "No need! I found your reservation in the system using your passport.", "/noʊ niːd | aɪ faʊnd jɔːr ˌrezərˈveɪʃn ɪn ðə ˈsɪstəm ˈjuːzɪŋ jɔːr ˈpæspɔːrt/", "(Nôu níid! Ai fáund iór ré-zer-vêi-xãn in dhu sís-tem iú-zin iór pés-pórt)", "Não precisa! Já encontrei a sua reserva no sistema usando o seu passaporte.", "<strong>Expressão rápida:</strong> <em>'No need!'</em> é a forma curta de <em>'There is no need'</em> (Não há necessidade / Não precisa)."],
+                    [5, "BR", "Great! Can I choose my seat? I prefer an <b>aisle seat</b> if possible.", "/ɡreɪt | kæn aɪ tʃuːz maɪ siːt | aɪ prɪˈfɜːr ən aɪl siːt ɪf ˈpɑːsəbl/", "(Grêit! Quén ai tchúz mai síit? Ai pri-fâr ãn áil síit if pó-si-bôl)", "Ótimo! Posso escolher meu assento? Eu prefiro um assento no corredor, se possível.", "<strong>🚨 Pronúncia Campeã de Erros:</strong> Na palavra <strong>aisle</strong> (corredor de avião/mercado), o 'S' é 100% mudo! Pronuncie <strong>/aɪl/ ('áil')</strong>!"],
+                    [6, "US", "Let me check... Yes, row 14 has an aisle seat available. Would you like that one?", "/let miː tʃek | jes roʊ ˌfɔːrˈtiːn hæz ən aɪl siːt əˈveɪləbl | wʊd juː laɪk ðæt wʌn/", "(Lét mi tchéc... Iés, rôu fór-tíin réz ãn áil síit a-vêi-la-bôl. Uúd iu láic dhét uãn?)", "Deixe-me checar... Sim, a fileira 14 tem um assento de corredor disponível. Gostaria desse?", "<strong>Vocabulário de Avião:</strong> Fileira de poltronas é <strong>row</strong> (/roʊ/); assento na janela é <strong>window seat</strong>; assento do meio é <strong>middle seat</strong>."],
+                    [7, "BR", "Yes, please! Are you going to <b>check</b> this big suitcase all the way to Orlando?", "/jes pliːz | ɑːr juː ˈɡoʊɪŋ tə tʃek ðɪs bɪɡ ˈsuːtkeɪs ɔːl ðə weɪ tuː ɔːrˈlændoʊ/", "(Iés, plíiz! Ar iu gôu-in tu tchéc dhis bíg sút-quêis ól dhu uêi tu Or-lén-dôu?)", "Sim, por favor! Você vai despachar esta mala grande direto até Orlando?", "<strong>Verbo 'Check':</strong> Além de 'verificar', no aeroporto <em>'check a bag / suitcase'</em> significa <strong>despachar uma mala</strong>!"],
+                    [8, "US", "Yes, your luggage goes straight to Orlando. Please place your suitcase on the <b>scale</b>.", "/jes jɔːr ˈlʌɡɪdʒ ɡoʊz streɪt tuː ɔːrˈlændoʊ | pliːz pleɪs jɔːr ˈsuːtkeɪs ɑːn ðə skeɪl/", "(Iés, iór lâ-guedj gôuz strêit tu Or-lén-dôu. Plíiz plêis iór sút-quêis ón dhu skêil)", "Sim, sua bagagem vai direto para Orlando. Por favor, coloque sua mala na balança.", "<strong>Vocabulário:</strong> Balança de pesagem chama-se <strong>scale</strong>; <em>luggage</em> (ou <em>baggage</em>) é incontável (nunca diga <em>luggages</em>!)."],
+                    [9, "BR", "I hope it isn't <b>overweight</b>! I packed a lot of clothes for the trip.", "/aɪ hoʊp ɪt ˈɪznt ˌoʊvərˈweɪt | aɪ pækt ə lɑːt əv kloʊðz fɔːr ðə trɪp/", "(Ai rôup it í-zânt ôu-ver-uêit! Ai péct a lót óv clôudhz fór dhu tríp)", "Espero que não esteja acima do peso! Eu coloquei muitas roupas na mala para a viagem.", "<strong>Verbo 'Pack':</strong> 'Arrumar as malas / colocar coisas na mala' em inglês é apenas o verbo <strong>pack</strong>!"],
+                    [10, "US", "It weighs 22 kilos, so it's right under the 23-kilo limit! Do you have any <b>carry-on</b> bag?", "/ɪt weɪz ˈtwenti tuː ˈkiːloʊz | soʊ ɪts raɪt ˈʌndər ðə ˈtwenti θriː ˈkiːloʊ ˈlɪmɪt | duː juː hæv ˈeni ˈkæri ɑːn bæɡ/", "(It uêiz tuên-ti tú quí-louz, sôu its ráit ân-der dhu tuên-ti thríi quí-lou lí-mit! Du iu rév ê-ni qué-ri-ón bég?)", "Pesa 22 quilos, então está bem abaixo do limite de 23 quilos! Você tem alguma bagagem de mão?", "<strong>Termo Essencial:</strong> Bagagem de mão (que vai com você na cabine do avião) chama-se <strong>carry-on bag</strong>."],
+                    [11, "BR", "Just this small backpack. Can I <b>take</b> it on the plane with me?", "/dʒʌst ðɪs smɔːl ˈbækpæk | kæn aɪ teɪk ɪt ɑːn ðə pleɪn wɪθ miː/", "(Djâst dhis smól béc-péc. Quén ai têic it ón dhu plêin uídh mi?)", "Apenas esta mochila pequena. Posso levá-la no avião comigo?", "<strong>Revisão da Aula do TAKE:</strong> Como a mochila vai acompanhar você para dentro do avião, usamos <em>'take it with me'</em>."],
+                    [12, "US", "Yes, that fits easily under the seat in front of you. Did you pack any liquids or power banks?", "/jes ðæt fɪts ˈiːzəli ˈʌndər ðə siːt ɪn frʌnt əv juː | dɪd juː pæk ˈeni ˈlɪkwɪdz ɔːr ˈpaʊər bæŋks/", "(Iés, dhét fíts í-zi-li ân-der dhu síit in frânt óv iu. Did iu péc ê-ni lí-quidz ór páu-er béncs?)", "Sim, ela cabe facilmente debaixo do assento à sua frente. Você colocou algum líquido ou carregador portátil?", "<strong>Segurança de Voo:</strong> Baterias externas (<em>power banks</em>) sempre devem ir na mochila de mão, nunca na mala despachada."],
+                    [13, "BR", "My power bank is in my backpack, and I don't have any liquids over 100 milliliters.", "/maɪ ˈpaʊər bæŋk ɪz ɪn maɪ ˈbækpæk | ænd aɪ doʊnt hæv ˈeni ˈlɪkwɪdz ˈoʊvər wʌn ˈhʌndrəd ˈmɪlɪliːtərz/", "(Mai páu-er bénc iz in mai béc-péc, énd ai dôunt rév ê-ni lí-quidz ôu-ver uãn rân-dred mí-li-líi-ters)", "Meu carregador portátil está na minha mochila, e não tenho nenhum líquido acima de 100 mililitros.", "<strong>Preposição 'Over':</strong> Aqui <em>'over 100 ml'</em> significa 'acima de / mais do que 100 ml'."],
+                    [14, "US", "Perfect! Here is your <b>boarding pass</b> and your baggage claim tag.", "/ˈpɜːrfɪkt | hɪr ɪz jɔːr ˈbɔːrdɪŋ pæs ænd jɔːr ˈbæɡɪdʒ kleɪm tæɡ/", "(Pâr-fect! Ríher iz iór bór-din pés énd iór bé-guedj clêim tég)", "Perfeito! Aqui está o seu cartão de embarque e o comprovante (etiqueta) da sua bagagem despachada.", "<strong>Dois nomes vitais:</strong> <strong>Boarding pass</strong> = cartão de embarque; <strong>Baggage tag</strong> = comprovante colado para rastrear sua mala."],
+                    [15, "BR", "Thank you! Which <b>gate</b> does my flight depart from, and what time is boarding?", "/θæŋk juː | wɪtʃ ɡeɪt dʌz maɪ flaɪt dɪˈpɑːrt frʌm | ænd wʌt taɪm ɪz ˈbɔːrdɪŋ/", "(Thénk iu! Uítch guêit dâz mai fláit di-párt frâm, énd uót táim iz bór-din?)", "Obrigado! De qual portão o meu voo parte, e a que horas é o embarque?", "<strong>Contraste Sonoro:</strong> Veja a diferença entre <strong>GATE</strong> (/ɡeɪt/ - portão de embarque) e o verbo <strong>GET</strong> (/ɡet/)."],
+                    [16, "US", "Your flight departs from Gate B12, and <b>boarding</b> starts at 10:15 AM.", "/jɔːr flaɪt dɪˈpɑːrts frʌm ɡeɪt biː twelv | ænd ˈbɔːrdɪŋ stɑːrts æt ten ˌfɪfˈtiːn eɪ em/", "(Iór fláit di-párts frâm Guêit Bíi-tuélv, énd bór-din stárts ét tén fif-tíin êi-ém)", "Seu voo parte do Portão B12, e o embarque começa às 10h15 da manhã.", "<strong>Vocabulário de Painel:</strong> Nos telões do aeroporto, <em>Departures</em> = Partidas/Embarques e <em>Arrivals</em> = Chegadas/Desembarques."],
+                    [17, "BR", "Is the flight <b>on time</b>, or is there any delay?", "/ɪz ðə flaɪt ɑːn taɪm | ɔːr ɪz ðer ˈeni dɪˈleɪ/", "(Iz dhu fláit ón táim, ór iz dhér ê-ni di-lêi?)", "O voo está no horário, ou há algum atraso?", "<strong>On time vs. In time:</strong> <strong>On time</strong> = pontualmente no horário previsto; <strong>In time</strong> = a tempo (antes que seja tarde)."],
+                    [18, "US", "It's right on time! Just head through <b>security check</b> now because the line can be long.", "/ɪts raɪt ɑːn taɪm | dʒʌst hed θruː sɪˈkjʊrəti tʃek naʊ bɪˈkɔːz ðə laɪn kæn biː lɔːŋ/", "(Its ráit ón táim! Djâst réd thrú si-quiú-ri-ti tchéc náu bi-cóz dhu láin quén bí lóng)", "Está rigorosamente no horário! Apenas siga pelo raio-X (controle de segurança) agora porque a fila pode estar grande.", "<strong>Falso Amigo Visual:</strong> 'Fila' nos EUA é <strong>line</strong> (no Reino Unido é <em>queue</em>)."],
+                    [19, "BR", "Do I need to <b>take off</b> my shoes and belt at the security check?", "/duː aɪ niːd tə teɪk ɔːf maɪ ʃuːz ænd belt æt ðə sɪˈkjʊrəti tʃek/", "(Du ai níid tu têic óf mai xúuz énd bélt ét dhu si-quiú-ri-ti tchéc?)", "Eu preciso tirar meus sapatos e cinto no raio-X (controle de segurança)?", "<strong>Phrasal Verb na Prática:</strong> Olha o <strong>take off</strong> (desprender/remover do corpo) sendo usado no raio-X do aeroporto!"],
+                    [20, "US", "Yes, and you'll also need to <b>take</b> your laptop <b>out</b> of your backpack. Have a safe flight!", "/jes ænd juːl ˈɔːlsoʊ niːd tə teɪk jɔːr ˈlæptɑːp aʊt əv jɔːr ˈbækpæk | hæv ə seɪf flaɪt/", "(Iés, énd iúl óu-sôu níid tu têic iór lép-tóp áut óv iór béc-péc. Rév a sêif fláit!)", "Sim, e você também precisará tirar o seu notebook de dentro da mochila. Tenha um bom voo (voo seguro)!", "<strong>Dupla Perfeita da Aula do TAKE:</strong> Você <em>takes OFF</em> os sapatos (da superfície do pé) e <em>takes OUT</em> o laptop (de dentro da mochila)!"]
+                ]
+            },
+            {
+                actId: 2,
+                title: "Ato 2: Entrevista na Imigração e Alfândega nos EUA (Nível Básico-Intermediário – Falas #21 a #40)",
+                items: [
+                    [21, "BR", "Good afternoon, officer! Here is my passport.", "/ɡʊd ˌæftərˈnuːn ˈɔːfɪsər | hɪr ɪz maɪ ˈpæspɔːrt/", "(Gúd éf-ter-núun, ó-fi-ser! Ríher iz mai pés-pórt)", "Boa tarde, oficial (agente)! Aqui está o meu passaporte.", "<strong>Dica de Ouro na Imigração:</strong> Chame o agente de imigração ou policial sempre de <strong>Officer</strong> (mantendo a calma e respostas diretas)."],
+                    [22, "US", "Good afternoon. What is the <b>purpose</b> of your visit to the United States?", "/ɡʊd ˌæftərˈnuːn | wʌt ɪz ðə ˈpɜːrpəs əv jɔːr ˈvɪzɪt tə ðə juːˈnaɪtɪd steɪts/", "(Gúd éf-ter-núun. Uót iz dhu pâr-pâs óv iór ví-zit tu dhu Iu-nái-ted Stêits?)", "Boa tarde. Qual é o objetivo (motivo) da sua visita aos Estados Unidos?", "<strong>A Pergunta #1 da Imigração:</strong> <em>'What is the purpose of your trip/visit?'</em>. Responda curto: <em>'Tourism / Vacation'</em> ou <em>'Business'</em>."],
+                    [23, "BR", "I am here on <b>vacation</b> for tourism. I'm visiting the theme parks with my family.", "/aɪ æm hɪr ɑːn veɪˈkeɪʃn fɔːr ˈtʊrɪzəm | aɪm ˈvɪzɪtɪŋ ðə θiːm pɑːrks wɪθ maɪ ˈfæməli/", "(Ai ém ríher ón vei-quêi-xãn fór tú-ri-zâm. Aim ví-zi-tin dhu thíim párcs uídh mai fé-mi-li)", "Estou aqui de férias a turismo. Vou visitar os parques temáticos com a minha família.", "<strong>Preposição Fixa:</strong> 'De férias' é sempre <strong>ON vacation</strong> (nunca diga <em>in vacation</em>!)."],
+                    [24, "US", "How long are you planning to <b>stay</b> in the country?", "/haʊ lɔːŋ ɑːr juː ˈplænɪŋ tə steɪ ɪn ðə ˈkʌntri/", "(Ráu lóng ar iu plé-nin tu stêi in dhu cân-tri?)", "Por quanto tempo você planeja ficar (permanecer) no país?", "<strong>A Pergunta #2 da Imigração:</strong> <em>'How long are you staying?'</em> (Quanto tempo vai ficar?)."],
+                    [25, "BR", "I am staying for ten days. My <b>return flight</b> is on November 23rd.", "/aɪ æm ˈsteɪɪŋ fɔːr ten deɪz | maɪ rɪˈtɜːrn flaɪt ɪz ɑːn noʊˈvembər ˈtwenti θɜːrd/", "(Ai ém stêi-in fór tén dêiz. Mai ri-târn fláit iz ón Nou-vêm-ber tuên-ti-thârd)", "Vou ficar por dez dias. Meu voo de volta é no dia 23 de novembro.", "<strong>Preposição de Data:</strong> Para dias da semana ou datas exatas (dia + mês), usamos sempre <strong>ON</strong>!"],
+                    [26, "US", "Can you show me your return ticket and your hotel reservation?", "/kæn juː ʃoʊ miː jɔːr rɪˈtɜːrn ˈtɪkɪt ænd jɔːr hoʊˈtel ˌrezərˈveɪʃn/", "(Quén iu xôu mi iór ri-târn tí-quet énd iór rou-tél ré-zer-vêi-xãn?)", "Você pode me mostrar sua passagem de volta e a reserva do seu hotel?", "<strong>Dica Prática:</strong> Tenha sempre a passagem de volta (<em>return ticket</em>) e o voucher do hotel impressos numa pastinha na mão!"],
+                    [27, "BR", "Of course! I have the printed confirmations right here in my folder.", "/əv kɔːrs | aɪ hæv ðə ˈprɪntɪd ˌkɑːnfərˈmeɪʃnz raɪt hɪr ɪn maɪ ˈfoʊldər/", "(Óv córs! Ai rév dhu prín-ted cón-for-mêi-xãnz ráit ríher in mai fôul-der)", "Claro! Eu tenho as confirmações impressas bem aqui na minha pasta.", "<strong>Vocabulário:</strong> Pasta de documentos em inglês chama-se <strong>folder</strong>."],
+                    [28, "US", "Where will you be <b>staying</b> during your trip?", "/wer wɪl juː biː ˈsteɪɪŋ ˈdʊrɪŋ jɔːr trɪp/", "(Uér uíl iu bí stêi-in dú-rin iór tríp?)", "Onde você ficará hospedado durante a sua viagem?", "<strong>Verbo 'Stay':</strong> Além de 'ficar', <em>stay</em> também significa 'hospedar-se' (<em>I'm staying at a hotel</em>)."],
+                    [29, "BR", "I'll be staying at the Grand Resort Hotel on International Drive.", "/aɪl biː ˈsteɪɪŋ æt ðə ɡrænd rɪˈzɔːrt hoʊˈtel ɑːn ˌɪntərˈnæʃnəl draɪv/", "(Áil bí stêi-in ét dhu Grénd Ri-zórt Rou-tél ón În-ter-né-xo-nôl Dráiv)", "Ficarei hospedado no Grand Resort Hotel, na avenida International Drive.", "<strong>Revisão de Preposições (Aula Extra 2):</strong> <strong>AT</strong> para o hotel específico; <strong>ON</strong> para o nome da rua/avenida!"],
+                    [30, "US", "Are you traveling alone, or is anyone else traveling with you?", "/ɑːr juː ˈtrævlɪŋ əˈloʊn | ɔːr ɪz ˈeniwʌn els ˈtrævlɪŋ wɪθ juː/", "(Ar iu tré-vlin a-lôun, ór iz ê-ni-uãn éls tré-vlin uídh iu?)", "Você está viajando sozinho, ou há mais alguém viajando com você?", "<strong>Uso de 'Else':</strong> <em>'Anyone else'</em> = mais alguém; <em>'Anything else'</em> = mais alguma coisa."],
+                    [31, "BR", "I'm traveling with my wife and my two sons; they are right behind me in line.", "/aɪm ˈtrævlɪŋ wɪθ maɪ waɪf ænd maɪ tuː sʌnz | ðeɪ ɑːr raɪt bɪˈhaɪnd miː ɪn laɪn/", "(Aim tré-vlin uídh mai uáif énd mai tú sânz; dhêi ar ráit bi-ráind mi in láin)", "Estou viajando com minha esposa e meus dois filhos; eles estão logo atrás de mim na fila.", "<strong>Dica de Imigração em Família:</strong> Famílias que moram no mesmo endereço podem passar juntas na cabine do oficial!"],
+                    [32, "US", "You can call your family to the booth so I can process all of you together.", "/juː kæn kɔːl jɔːr ˈfæməli tə ðə buːθ soʊ aɪ kæn ˈprɑːses ɔːl əv juː təˈɡeðər/", "(Iu quén cól iór fé-mi-li tu dhu búuth sôu ai quén pró-sés ól óv iu tu-gué-dher)", "Você pode chamar sua família até a cabine para que eu possa atender todos vocês juntos.", "<strong>Vocabulário:</strong> Cabine de atendimento ou pedágio em inglês é <strong>booth</strong> (/buːθ/)."],
+                    [33, "BR", "Thank you, officer! Come on over, Maria, Olavo, and Casimiro!", "/θæŋk juː ˈɔːfɪsər | kʌm ɑːn ˈoʊvər/", "(Thénk iu, ó-fi-ser! Câm ón ôu-ver, Maria, Olavo énd Casimiro!)", "Obrigado, oficial! Venham para cá, Maria, Olavo e Casimiro!", "<strong>Expressão natural:</strong> <em>'Come on over!'</em> = Venham até aqui / Cheguem mais perto!"],
+                    [34, "US", "What do you <b>do for a living</b> back in Brazil, sir?", "/wʌt duː juː duː fɔːr ə ˈlɪvɪŋ bæk ɪn brəˈzɪl sɜːr/", "(Uót du iu dú fór a lí-vin béc in Bra-zíl, sâr?)", "No que você trabalha (O que faz para viver) lá no Brasil, senhor?", "<strong>A Pergunta da Profissão:</strong> <em>'What do you do for a living?'</em> ou <em>'What is your occupation?'</em> pergunta qual é o seu trabalho."],
+                    [35, "BR", "I work in business management, and my wife has a steady job in our hometown.", "/aɪ wɜːrk ɪn ˈbɪznəs ˈmænɪdʒmənt | ænd maɪ waɪf hæz ə ˈstedi dʒɑːb ɪn ˈaʊər ˈhoʊmtaʊn/", "(Ai uârk in bíz-nes mé-nidj-ment, énd mai uáif réz a sté-di djób in áu-er rôum-táun)", "Eu trabalho com gestão de negócios, e minha esposa tem um emprego estável em nossa cidade natal.", "<strong>Vocabulário útil:</strong> <em>'Steady job'</em> = emprego fixo/estável; <em>'hometown'</em> = cidade natal / onde mora."],
+                    [36, "US", "How much cash or currency are you <b>bringing</b> with you on this trip?", "/haʊ mʌtʃ kæʃ ɔːr ˈkɜːrənsi ɑːr juː ˈbrɪŋɪŋ wɪθ juː ɑːn ðɪs trɪp/", "(Ráu mâtch quéx ór câ-ren-si ar iu brín-guin uídh iu ón dhis tríp?)", "Quanto dinheiro em espécie (moeda) você está trazendo com você nesta viagem?", "<strong>Regra da Alfândega:</strong> É permitido entrar nos EUA com até US$ 10.000 sem precisar declarar formulário especial."],
+                    [37, "BR", "We are carrying about one thousand dollars in cash, plus our international credit cards.", "/wiː ɑːr ˈkæriɪŋ əˈbaʊt wʌn ˈθaʊznd ˈdɑːlərz ɪn kæʃ | plʌs ˈaʊər ˌɪntərˈnæʃnəl ˈkredɪt kɑːrdz/", "(Uí ar qué-ri-in a-báut uãn tháu-zând dó-lars in quéx, plâs áu-er în-ter-né-xo-nôl cré-dit cárdz)", "Estamos levando cerca de mil dólares em espécie, mais os nossos cartões de crédito internacionais.", "<strong>Carry vs. Take:</strong> Para o que você traz na carteira/bolsa durante a viagem, <em>carrying</em> é excelente."],
+                    [38, "US", "Are you bringing any fresh fruits, meats, seeds, or agricultural products?", "/ɑːr juː ˈbrɪŋɪŋ ˈeni freʃ fruːts miːts siːdz ɔːr ˌæɡrɪˈkʌltʃərəl ˈprɑːdʌkts/", "(Ar iu brín-guin ê-ni fréx frúts, míits, síidz ór é-gri-câl-tchu-rôl pró-dâcts?)", "Vocês estão trazendo alguma fruta fresca, carnes, sementes ou produtos agrícolas?", "<strong>Atenção na Alfândega (Customs):</strong> Frutas frescas, carnes e plantas são estritamente proibidas ao entrar nos EUA."],
+                    [39, "BR", "No, officer. We only have some sealed snacks and cookies for the kids.", "/noʊ ˈɔːfɪsər | wiː ˈoʊnli hæv sʌm siːld snæks ænd ˈkʊkiz fɔːr ðə kɪdz/", "(Nôu, ó-fi-ser. Uí ôun-li rév sâm síild snécs énd cú-quiz fór dhu quíds)", "Não, oficial. Nós só temos alguns lanchinhos e biscoitos lacrados (fechados de fábrica) para as crianças.", "<strong>Vocabulário:</strong> <em>'Sealed'</em> (/siːld/) significa lacrado / fechado na embalagem original."],
+                    [40, "US", "Please look at the camera and place your four right fingers on the scanner. Welcome to the US!", "/pliːz lʊk æt ðə ˈkæmrə ænd pleɪs jɔːr fɔːr raɪt ˈfɪŋɡərz ɑːn ðə ˈskænər | ˈwelkəm tə ðə juː es/", "(Plíiz lúc ét dhu qué-mra énd plêis iór fór ráit fín-guers ón dhu ské-ner. Uél-câm tu dhu Iu-És!)", "Por favor, olhe para a câmera e coloque os quatro dedos da mão direita no leitor. Bem-vindos aos EUA!", "<strong>Dedos da Mão vs. do Pé:</strong> Dedos da mão são <strong>fingers</strong> (o polegar é <strong>thumb</strong>); dedos do pé são <strong>toes</strong>!"]
+                ]
+            },
+            {
+                actId: 3,
+                title: "Ato 3: Esteira de Bagagens, Mala Atrasada, Chip de Celular e Aluguel de Carro (Nível Intermediário – Falas #41 a #62)",
+                items: [
+                    [41, "BR", "Excuse me, ma'am! Which carousel is the <b>baggage claim</b> for the flight from São Paulo?", "/ɪkˈskjuːz miː mæm | wɪtʃ ˌkærəˈsel ɪz ðə ˈbæɡɪdʒ kleɪm fɔːr ðə flaɪt frʌm/", "(Ecs-quiúz mi, mém! Uítch qué-ra-sél iz dhu bé-guedj clêim fór dhu fláit frâm São Paulo?)", "Com licença, senhora! Qual esteira é a retirada de bagagens do voo vindo de São Paulo?", "<strong>Vocabulário de Desembarque:</strong> O setor de restituição de malas é <strong>Baggage Claim</strong>, e a esteira giratória é <strong>carousel</strong> ou <strong>belt</strong>."],
+                    [42, "US", "Flight 904 is unloading on Carousel 5, right over there next to the exit.", "/flaɪt naɪn oʊ fɔːr ɪz ˌʌnˈloʊdɪŋ ɑːn ˌkærəˈsel faɪv | raɪt ˈoʊvər ðer nekst tə ði ˈeɡzɪt/", "(Fláit náin-ôu-fór iz ân-lôu-din ón Qué-ra-sél fáiv, ráit ôu-ver dhér nécst tu dhi ég-zit)", "O voo 904 está descarregando na Esteira 5, logo ali ao lado da saída.", "<strong>Números em Inglês:</strong> Em códigos de voo ou quarto (<em>904</em>), o zero costuma ser lido como a letra 'O': <strong>nine-oh-four</strong>!"],
+                    [43, "BR", "I waited until the carousel stopped, but one of our suitcases <b>didn't show up</b>.", "/aɪ ˈweɪtɪd ənˈtɪl ðə ˌkærəˈsel stɑːpt | bʌt wʌn əv ˈaʊər ˈsuːtkeɪsɪz ˈdɪdnt ʃoʊ ʌp/", "(Ai uêi-ted ân-tíl dhu qué-ra-sél stópt, bât uãn óv áu-er sút-quêi-siz dí-dânt xôu âp)", "Eu esperei até a esteira parar, mas uma das nossas malas não apareceu.", "<strong>Phrasal Verb Muito Usado:</strong> <strong>Show up</strong> significa 'aparecer / dar as caras / chegar'."],
+                    [44, "US", "I'm sorry to hear that! Let me scan your <b>baggage claim tag</b> at the Lost and Found counter.", "/aɪm ˈsɑːri tə hɪr ðæt | let miː skæn jɔːr ˈbæɡɪdʒ kleɪm tæɡ æt ðə lɔːst ænd faʊnd ˈkaʊntər/", "(Aim só-ri tu ríher dhét! Lét mi skén iór bé-guedj clêim tég ét dhu Lóst énd Fáund cáun-ter)", "Sinto muito em ouvir isso! Deixe-me escanear a etiqueta da sua bagagem no balcão de Achados e Perdidos.", "<strong>Setor Essencial:</strong> 'Achados e Perdidos' em inglês chama-se sempre <strong>Lost and Found</strong>."],
+                    [45, "BR", "Here is the tag. It's a large black hard-shell suitcase with a yellow ribbon on the handle.", "/hɪr ɪz ðə tæɡ | ɪts ə lɑːrdʒ blæk hɑːrd ʃel ˈsuːtkeɪs wɪθ ə ˈjeloʊ ˈrɪbən ɑːn ðə ˈhændl/", "(Ríher iz dhu tég. Its a lárdj bléc rárd-xél sút-quêis uídh a ié-lôu rí-bãn ón dhu rén-dôl)", "Aqui está a etiqueta. É uma mala preta grande e rígida com uma fita amarela na alça.", "<strong>Vocabulário Descritivo:</strong> <em>'Hard-shell'</em> = mala rígida; <em>'ribbon'</em> = fita de identificar; <em>'handle'</em> = alça da mala."],
+                    [46, "US", "Good news! Your bag wasn't lost; it just stayed behind in Miami and is on the next flight.", "/ɡʊd nuːz | jɔːr bæɡ ˈwʌznt lɔːst | ɪt dʒʌst steɪd bɪˈhaɪnd ɪn maɪˈæmi ænd ɪz ɑːn ðə nekst flaɪt/", "(Gúd núz! Iór bég uó-zânt lóst; it djâst stêid bi-ráind in Mai-ê-mi énd iz ón dhu nécst fláit)", "Boas notícias! Sua mala não foi perdida; ela apenas ficou para trás em Miami e já está vindo no próximo voo.", "<strong>Gramática:</strong> A palavra <strong>news</strong> (notícia/notícias) tem S no final, mas é sempre singular e incontável!"],
+                    [47, "BR", "What a relief! Do I have to come back to the airport to <b>pick it up</b>, or will you deliver it?", "/wʌt ə rɪˈliːf | duː aɪ hæv tə kʌm bæk tə ði ˈerpɔːrt tə pɪk ɪt ʌp | ɔːr wɪl juː dɪˈlɪvər ɪt/", "(Uót a ri-líif! Du ai rév tu câm béc tu dhi ér-pórt tu píc it âp, ór uíl iu di-lí-ver it?)", "Que alívio! Eu tenho que voltar ao aeroporto para buscá-la, ou vocês vão entregá-la?", "<strong>Exclamação Útil:</strong> <em>'What a relief!'</em> = Que alívio! E veja <em>'pick it up'</em> (buscar) na prática."],
+                    [48, "US", "We will deliver it straight to your hotel front desk tonight at no extra cost!", "/wiː wɪl dɪˈlɪvər ɪt streɪt tə jɔːr hoʊˈtel frʌnt desk təˈnaɪt æt noʊ ˈekstrə kɔːst/", "(Uí uíl di-lí-ver it strêit tu iór rou-tél frânt désk tu-náit ét nôu écs-tra cóst!)", "Nós vamos entregá-la direto na recepção do seu hotel hoje à noite sem custo extra!", "<strong>Vocabulário de Hotel:</strong> A recepção do hotel em inglês é chamada de <strong>front desk</strong> (ou <em>reception</em>)."],
+                    [49, "BR", "Thank you so much! Before I leave the terminal, where can I buy a local <b>SIM card</b>?", "/θæŋk juː soʊ mʌtʃ | bɪˈfɔːr aɪ liːv ðə ˈtɜːrmɪnl | wer kæn aɪ baɪ ə ˈloʊkl sɪm kɑːrd/", "(Thénk iu sôu mâtch! Bi-fór ai líiv dhu târ-mi-nôl, uér quén ai bái a lôu-côl Sím cárd?)", "Muito obrigado! Antes de eu sair do terminal, onde posso comprar um chip de celular local?", "<strong>Falso Amigo Moderno:</strong> 'Chip de celular' em inglês NÃO é <em>chip</em> (que lembra batata frita!); diga sempre <strong>SIM card</strong> ou <strong>eSIM</strong>!"],
+                    [50, "US", "There's a mobile kiosk right across from the car rental desks. They set it up in five minutes.", "/ðerz ə ˈmoʊbl ˈkiːɑːsk raɪt əˈkrɔːs frʌm ðə kɑːr ˈrentl desks | ðeɪ set ɪt ʌp ɪn faɪv ˈmɪnɪts/", "(Dhérz a môu-bôl quí-ósc ráit a-crós frâm dhu cár rên-tôl déscs. Dhêi sét it âp in fáiv mí-nits)", "Há um quiosque de telefonia bem em frente aos balcões de aluguel de carros. Eles configuram em cinco minutos.", "<strong>Phrasal Verb:</strong> <em>'Set it up'</em> = configurar / instalar / deixar pronto para uso."],
+                    [51, "BR", "Awesome! Actually, I'm heading to the <b>car rental</b> counter right now to pick up our SUV.", "/ˈɔːsəm | ˈæktʃuəli aɪm ˈhedɪŋ tə ðə kɑːr ˈrentl ˈkaʊntər raɪt naʊ tə pɪk ʌp ˈaʊər es juː viː/", "(Ó-sâm! Éc-tchu-a-li, aim ré-din tu dhu cár rên-tôl cáun-ter ráit náu tu píc âp áu-er És-Iu-Víi)", "Excelente! Na verdade, estou indo para o balcão da locadora de carros agora mesmo para retirar nosso SUV.", "<strong>Verbo de Direção:</strong> <em>'I'm heading to...'</em> é muito usado pelos americanos para dizer 'Estou indo em direção a...'."],
+                    [52, "US", "Welcome to the car rental counter! Do you have a reservation with us, sir?", "/ˈwelkəm tə ðə kɑːr ˈrentl ˈkaʊntər | duː juː hæv ə ˌrezərˈveɪʃn wɪθ ʌs sɜːr/", "(Uél-câm tu dhu cár rên-tôl cáun-ter! Du iu rév a ré-zer-vêi-xãn uídh âs, sâr?)", "Bem-vindo ao balcão de aluguel de carros! O senhor tem uma reserva conosco?", "<strong>Mudança de Cenário no Terminal:</strong> Agora Bruno já está no guichê da locadora retirando o veículo da família."],
+                    [53, "BR", "Yes, I booked a seven-seat SUV online. Here are my <b>driver's license</b> and credit card.", "/jes aɪ bʊkt ə ˈsevən siːt es juː viː ˈɑːnlaɪn | hɪr ɑːr maɪ ˈdraɪvərz ˈlaɪsns ænd ˈkredɪt kɑːrd/", "(Iés, ai búct a sé-ven-síit És-Iu-Víi ón-láin. Ríher ar mai drái-verz lái-sens énd cré-dit cárd)", "Sim, eu reservei um SUV de sete lugares online. Aqui estão minha carteira de motorista e cartão de crédito.", "<strong>Verbo 'Book':</strong> Como substantivo <em>book</em> é livro, mas como verbo <strong>to book</strong> significa <strong>reservar</strong> (<em>I booked a car / hotel</em>)!"],
+                    [54, "US", "Great! Would you like to add full <b>insurance coverage</b> and an electronic toll pass?", "/ɡreɪt | wʊd juː laɪk tuː æd fʊl ɪnˈʃʊrəns ˈkʌvərɪdʒ ænd ən ɪˌlekˈtrɑːnɪk toʊl pæs/", "(Grêit! Uúd iu láic tu éd fúl in-xú-rans câ-ve-ridj énd ãn i-léc-tró-nic tôul pés?)", "Ótimo! O senhor gostaria de adicionar cobertura completa de seguro e o passe eletrônico de pedágio?", "<strong>Dica de Locadora nos EUA:</strong> O passe de pedágio eletrônico (<em>SunPass / E-Pass / Toll pass</em>) evita multas em pedágios sem cabine."],
+                    [55, "BR", "Yes to the toll pass, and I want full insurance so I don't have to worry about any scratches.", "/jes tə ðə toʊl pæs | ænd aɪ wɑːnt fʊl ɪnˈʃʊrəns soʊ aɪ doʊnt hæv tə ˈwɜːri əˈbaʊt ˈeni ˈskrætʃɪz/", "(Iés tu dhu tôul pés, énd ai uónt fúl in-xú-rans sôu ai dôunt rév tu uâ-ri a-báut ê-ni scré-tchiz)", "Sim para o passe de pedágio, e quero seguro completo para não ter que me preocupar com nenhum arranhão.", "<strong>Vocabulário:</strong> Arranhão/risco na pintura é <strong>scratch</strong>; amassado na lataria é <strong>dent</strong>."],
+                    [56, "US", "Smart choice! Also, we need two <b>booster seats</b> for your kids, right?", "/smɑːrt tʃɔɪs | ˈɔːlsoʊ wiː niːd tuː ˈbuːstər siːts fɔːr jɔːr kɪdz raɪt/", "(Smárt tchóis! Óu-sôu, uí níid tú bús-ter síits fór iór quíds, ráit?)", "Escolha inteligente! Além disso, precisamos de dois assentos de elevação para os seus filhos, certo?", "<strong>Vocabulário de Família:</strong> Cadeirinha de bebê é <strong>car seat</strong>; assento de elevação para crianças maiores é <strong>booster seat</strong>."],
+                    [57, "BR", "Yes, please! Safety comes first. Do I need to return the car with a <b>full tank</b> of gas?", "/jes pliːz | ˈseɪfti kʌmz fɜːrst | duː aɪ niːd tə rɪˈtɜːrn ðə kɑːr wɪθ ə fʊl tæŋk əv ɡæs/", "(Iés, plíiz! Sêif-ti câmz fârst. Du ai níid tu ri-târn dhu cár uídh a fúl ténc óv gués?)", "Sim, por favor! A segurança vem em primeiro lugar. Preciso devolver o carro com o tanque cheio de gasolina?", "<strong>Atenção:</strong> Nos EUA, gasolina líquida é chamada de <strong>gas</strong> (abreviação de <em>gasoline</em>). Posto de gasolina é <strong>gas station</strong>."],
+                    [58, "US", "Yes, bring it back full, otherwise the rental company charges a high refueling fee.", "/jes brɪŋ ɪt bæk fʊl | ˈʌðərwaɪz ðə ˈrentl ˈkʌmpəni ˈtʃɑːrdʒɪz ə haɪ ˌriːˈfjuːəlɪŋ fiː/", "(Iés, brín it béc fúl, ó-dher-uáiz dhu rên-tôl câm-pa-ni tchár-djiz a rái ri-fiú-lin fíi)", "Sim, traga-o de volta cheio, caso contrário a locadora cobra uma taxa alta de reabastecimento.", "<strong>Revisão de Conectivo:</strong> Veja <em>'otherwise'</em> (caso contrário / senão) em uso prático."],
+                    [59, "BR", "Got it! Where do we pick up the vehicle?", "/ɡɑːt ɪt | wer duː wiː pɪk ʌp ðə ˈviːəkl/", "(Gót it! Uér du uí píc âp dhu ví-i-côl?)", "Entendido! Onde nós pegamos (retiramos) o veículo?", "<strong>Pronúncia de 'Vehicle':</strong> O 'H' em <em>vehicle</em> é mudo! Pronuncie <strong>/ˈviːəkl/ ('ví-i-côl')</strong>."],
+                    [60, "US", "Take the elevator to Level 2 of the parking garage, row C. The keys are inside the car!", "/teɪk ði ˈelɪveɪtər tə ˈlevl tuː əv ðə ˈpɑːrkɪŋ ɡəˈrɑːʒ roʊ siː | ðə kiːz ɑːr ɪnˈsaɪd ðə kɑːr/", "(Têic dhi é-li-vêi-tor tu Lé-vôl tú óv dhu pár-quin ga-ráj, rôu Síi. Dhu quíiz ar in-sáid dhu cár!)", "Pegue o elevador até o Nível 2 do edifício-garagem, fileira C. As chaves estão dentro do carro!", "<strong>Curiosidade Americana:</strong> Em muitas locadoras dos EUA nos aeroportos, as chaves já ficam no porta-copos do carro!"],
+                    [61, "BR", "Wow, that's super practical! Is it easy to exit the airport and <b>get on</b> the highway?", "/waʊ ðæts ˈsuːpər ˈpræktɪkl | ɪz ɪt ˈiːzi tuː ˈeɡzɪt ði ˈerpɔːrt ænd ɡet ɑːn ðə ˈhaɪweɪ/", "(Uáu, dhéts sú-per préc-ti-côl! Iz it í-zi tu ég-zit dhi ér-pórt énd guét ón dhu rái-uêi?)", "Uau, isso é super prático! É fácil sair do aeroporto e entrar na rodovia?", "<strong>Expressão de Trânsito:</strong> Entrar/acessar uma rodovia ou avenida expressa diz-se <strong>get on the highway</strong>."],
+                    [62, "US", "Very easy! Just follow the blue signs for 'North Exit' and your GPS will guide you from there.", "/ˈveri ˈiːzi | dʒʌst ˈfɑːloʊ ðə bluː saɪnz fɔːr nɔːrθ ˈeɡzɪt ænd jɔːr dʒiː piː es wɪl ɡaɪd juː frʌm ðer/", "(Vé-ri í-zi! Djâst fó-lôu dhu blú sáinz fór Nórth Ég-zit énd iór Djíi-Píi-És uíl gáid iu frâm dhér)", "Muito fácil! Basta seguir as placas azuis para 'Saída Norte' e o seu GPS vai guiar você a partir de lá.", "<strong>Pronúncia de 'Signs':</strong> O 'G' em <em>sign / signs</em> (placa/placas) é mudo: diga <em>'sáin / sáinz'</em>."]
+                ]
+            },
+            {
+                actId: 4,
+                title: "Ato 4: Check-in no Hotel, Caução, Café da Manhã e Problemas no Quarto (Nível Intermediário-Avançado – Falas #63 a #84)",
+                items: [
+                    [63, "BR", "Good evening! We have a reservation under the last name Almeida for four nights.", "/ɡʊd ˈiːvnɪŋ | wiː hæv ə ˌrezərˈveɪʃn ˈʌndər ðə læst neɪm fɔːr fɔːr naɪts/", "(Gúd ív-nin! Uí rév a ré-zer-vêi-xãn ân-der dhu lést nêim Almeida fór fór náits)", "Boa noite! Nós temos uma reserva em nome (sob o sobrenome) Almeida para quatro noites.", "<strong>Expressão de Recepção:</strong> 'Reserva em nome de...' em inglês usa a preposição <strong>UNDER</strong> (<em>a reservation under the name...</em>)!"],
+                    [64, "US", "Welcome to the Grand Resort! I see your booking for a family suite with two queen beds.", "/ˈwelkəm tə ðə ɡrænd rɪˈzɔːrt | aɪ siː jɔːr ˈbʊkɪŋ fɔːr ə ˈfæməli swiːt wɪθ tuː kwiːn bedz/", "(Uél-câm tu dhu Grénd Ri-zórt! Ai síi iór bú-quin fór a fé-mi-li suíit uídh tú quíin bédz)", "Bem-vindos ao Grand Resort! Estou vendo sua reserva para uma suíte familiar com duas camas tamanho queen.", "<strong>🚨 Pronúncia de 'SUITE':</strong> Suíte de hotel pronuncia-se exatamente igual a <strong>sweet (doce): /swiːt/ ('suíit')</strong>! Nunca fale 'su-í-te'!"],
+                    [65, "BR", "That's right! Also, the airline is delivering a delayed suitcase for us tonight. Could you <b>hold it</b> at the front desk?", "/ðæts raɪt | ˈɔːlsoʊ ði ˈerlaɪn ɪz dɪˈlɪvərɪŋ ə dɪˈleɪd ˈsuːtkeɪs fɔːr ʌs təˈnaɪt | kʊd juː hoʊld ɪt æt ðə frʌnt desk/", "(Dhéts ráit! Óu-sôu, dhi ér-láin iz di-lí-ve-rin a di-lêid sút-quêis fór âs tu-náit. Cúd iu rôuld it ét dhu frânt désk?)", "Isso mesmo! Além disso, a companhia aérea vai entregar uma mala atrasada para nós hoje à noite. Vocês poderiam guardá-la na recepção?", "<strong>Verbo 'Hold':</strong> Além de segurar, em hotéis significa 'guardar / reter temporariamente' uma encomenda ou mala."],
+                    [66, "US", "Certainly! As soon as the courier drops it off, we'll have the bellhop bring it up to your room.", "/ˈsɜːrtnli | æz suːn æz ðə ˈkʊriər drɑːps ɪt ɔːf | wiːl hæv ðə ˈbelhɑːp brɪŋ ɪt ʌp tə jɔːr ruːm/", "(Sâr-ten-li! Éz súun éz dhu cú-ri-er dróps it óf, uíil rév dhu bél-róp brín it âp tu iór rúum)", "Certamente! Assim que o entregador deixá-la aqui, pediremos ao mensageiro para subi-la até o seu quarto.", "<strong>Phrasal Verb & Causativa:</strong> <strong>Drop off</strong> = deixar/entregar algo; <em>'have the bellhop bring it'</em> = pedir para o mensageiro levar."],
+                    [67, "BR", "Thank you! The room is already prepaid, right? Do you still need my credit card?", "/θæŋk juː | ðə ruːm ɪz ɔːlˈredi ˌpriːˈpeɪd raɪt | duː juː stɪl niːd maɪ ˈkredɪt kɑːrd/", "(Thénk iu! Dhu rúum iz óu-ré-di pri-pêid, ráit? Du iu stíl níid mai cré-dit cárd?)", "Obrigado! O quarto já está pré-pago, certo? Você ainda precisa do meu cartão de crédito?", "<strong>Procedimento Padrão:</strong> Mesmo com reserva paga (<em>prepaid</em>), todo hotel nos EUA pede um cartão no check-in."],
+                    [68, "US", "Yes, we just need a card on file for a $100 <b>security deposit</b> to cover incidentals.", "/jes wiː dʒʌst niːd ə kɑːrd ɑːn faɪl fɔːr ə wʌn ˈhʌndrəd ˈdɑːlər sɪˈkjʊrəti dɪˈpɑːzɪt tə ˈkʌvər ˌɪnsɪˈdentlz/", "(Iés, uí djâst níid a cárd ón fáil fór a uãn rân-dred dó-lar si-quiú-ri-ti di-pó-zit tu câ-ver in-si-dên-tôlz)", "Sim, só precisamos de um cartão registrado para um depósito caução de 100 dólares para cobrir despesas extras.", "<strong>Vocabulário de Hotel:</strong> <strong>Security deposit</strong> = caução temporária; <strong>incidentals</strong> = gastos extras (frigobar, estacionamento)."],
+                    [69, "BR", "When do I <b>get</b> that security deposit back?", "/wen duː aɪ ɡet ðæt sɪˈkjʊrəti dɪˈpɑːzɪt bæk/", "(Uén du ai guét dhét si-quiú-ri-ti di-pó-zit béc?)", "Quando eu recebo esse depósito caução de volta?", "<strong>Phrasal Verb com GET:</strong> <em>'Get something back'</em> = receber de volta / recuperar seu dinheiro."],
+                    [70, "US", "It's just a temporary hold! It is automatically released when you check out.", "/ɪts dʒʌst ə ˈtempəreri hoʊld | ɪt ɪz ˌɔːtəˈmætɪkli rɪˈliːst wen juː tʃek aʊt/", "(Its djâst a têm-po-ré-ri rôuld! It iz ó-to-mé-ti-cli ri-líist uén iu tchéc áut)", "É apenas um bloqueio temporário! Ele é liberado automaticamente quando você faz o check-out.", "<strong>Vocabulário Financeiro:</strong> <em>'A temporary hold'</em> = pré-autorização/bloqueio temporário no limite do cartão."],
+                    [71, "BR", "Perfect! Is <b>breakfast included</b>, and what time is it served?", "/ˈpɜːrfɪkt | ɪz ˈbrekfəst ɪnˈkluːdɪd | ænd wʌt taɪm ɪz ɪt sɜːrvd/", "(Pâr-fect! Iz bréc-fast in-clú-ded, énd uót táim iz it sârvd?)", "Perfeito! O café da manhã está incluído, e a que horas ele é servido?", "<strong>Pronúncia de 'Breakfast':</strong> Não fale 'bréki-fést'; a segunda sílaba é curtinha: <strong>/ˈbrekfəst/ ('bréc-fast')</strong>."],
+                    [72, "US", "Yes, complimentary breakfast is served from 6:30 AM to 10:00 AM in the dining hall.", "/jes ˌkɑːmplɪˈmentri ˈbrekfəst ɪz sɜːrvd frʌm sɪks ˈθɜːrti eɪ em tə ten eɪ em ɪn ðə ˈdaɪnɪŋ hɔːl/", "(Iés, cóm-pli-mên-tri bréc-fast iz sârvd frâm sícs thâr-ti êi-ém tu tén êi-ém in dhu dái-nin ról)", "Sim, o café da manhã de cortesia (gratuito) é servido das 6h30 às 10h no salão de refeições.", "<strong>Palavra Chave em Hotéis:</strong> Quando algo no hotel tem a placa <strong>Complimentary</strong>, significa que é <strong>grátis / cortesia da casa</strong>!"],
+                    [73, "BR", "And what is the <b>Wi-Fi password</b>? My kids are already asking to connect their tablets!", "/ænd wʌt ɪz ðə ˈwaɪ faɪ ˈpæswɜːrd | maɪ kɪdz ɑːr ɔːlˈredi ˈæskɪŋ tə kəˈnekt ðer ˈtæbləts/", "(Énd uót iz dhu Uái-Fái pés-uârd? Mai quíds ar óu-ré-di és-quin tu co-néct dhér té-blets!)", "E qual é a senha do Wi-Fi? Meus filhos já estão pedindo para conectar os tablets deles!", "<strong>Pronúncia de 'Wi-Fi':</strong> Em inglês, as duas sílabas têm som de 'ái': <strong>/ˈwaɪ faɪ/ ('Uái-Fái')</strong>."],
+                    [74, "US", "Haha, the network name is 'GrandGuest' and the password is written inside your keycard holder.", "/hɑːhɑː ðə ˈnetwɜːrk neɪm ɪz ænd ðə ˈpæswɜːrd ɪz ˈrɪtn ɪnˈsaɪd jɔːr ˈkiːkɑːrd ˈhoʊldər/", "(Rá-rá, dhu nét-uârk nêim iz 'GrandGuest' énd dhu pés-uârd iz rí-ten in-sáid iór quíi-cárd rôul-der)", "Haha, o nome da rede é 'GrandGuest' e a senha está escrita dentro do envelopinho do seu cartão-chave.", "<strong>Vocabulário de Hotel:</strong> O cartão magnético de abrir a porta chama-se <strong>keycard</strong>. Seu quarto é o 408 (<em>four-oh-eight</em>)."],
+                    [75, "BR", "Hello, front desk? This is Bruno from room 408. We just <b>got into</b> our room, and there's a small issue.", "/həˈloʊ frʌnt desk | ðɪs ɪz ˈbruːnoʊ frʌm ruːm fɔːr oʊ eɪt | wiː dʒʌst ɡɑːt ˈɪntuː ˈaʊər ruːm ænd ðerz ə smɔːl ˈɪʃuː/", "(Ra-lôu, frânt désk? Dhis iz Brú-nou frâm rúum fór-ôu-êit. Uí djâst gót ín-tu áu-er rúum, énd dhérz a smól í-xu)", "Alô, recepção? Aqui é o Bruno do quarto 408. Acabamos de entrar no nosso quarto, e há um pequeno problema.", "<strong>Ao Telefone em Inglês:</strong> Para se identificar ao telefone, nunca diga <em>'I am Bruno'</em>; diga sempre <strong>'This is Bruno'</strong>!"],
+                    [76, "US", "Oh, I'm sorry about that, Mr. Almeida! What seems to be the problem?", "/oʊ aɪm ˈsɑːri əˈbaʊt ðæt ˈmɪstər | wʌt siːmz tə biː ðə ˈprɑːbləm/", "(Ôu, aim só-ri a-báut dhét, Mís-ter Almeida! Uót síimz tu bí dhu pró-blem?)", "Ah, peço desculpas por isso, Sr. Almeida! Qual parece ser o problema?", "<strong>Atendimento ao Cliente:</strong> <em>'What seems to be the problem?'</em> é uma forma super educada de perguntar o que houve."],
+                    [77, "BR", "The <b>air conditioning</b> isn't cooling the room at all, and the thermostat seems stuck.", "/ði er kənˈdɪʃənɪŋ ˈɪznt ˈkuːlɪŋ ðə ruːm æt ɔːl | ænd ðə ˈθɜːrməstæt siːmz stʌk/", "(Dhi ér con-dí-xo-nin í-zânt cú-lin dhu rúum ét ól, énd dhu thâr-mo-stét síimz stâc)", "O ar-condicionado não está resfriando o quarto de jeito nenhum, e o termostato parece travado.", "<strong>Abreviação Comum:</strong> Nos EUA, <em>air conditioning</em> é quase sempre abreviado na fala como <strong>AC</strong> (<em>êi-síi</em>)."],
+                    [78, "US", "I'll send a maintenance technician up to your room right away to take a look at the AC.", "/aɪl send ə ˈmeɪntənəns tekˈnɪʃn ʌp tə jɔːr ruːm raɪt əˈweɪ tə teɪk ə lʊk æt ði eɪ siː/", "(Áil sênd a mêin-te-nans tec-ní-xãn âp tu iór rúum ráit a-uêi tu têic a lúc ét dhi Êi-Síi)", "Vou mandar um técnico de manutenção subir ao seu quarto imediatamente para dar uma olhada no ar-condicionado.", "<strong>Pronúncia de 'Maintenance':</strong> Muita gente erra falando 'mein-têi-nans'; o certo é <strong>/ˈmeɪntənəns/ ('MÊIN-te-nans')</strong>!"],
+                    [79, "BR", "Also, there are only two bath towels in the bathroom, so we need two <b>extra towels</b> and some soap.", "/ˈɔːlsoʊ ðer ɑːr ˈoʊnli tuː bæθ ˈtaʊəlz ɪn ðə ˈbæθruːm | soʊ wiː niːd tuː ˈekstrə ˈtaʊəlz ænd sʌm soʊp/", "(Óu-sôu, dhér ar ôun-li tú béth táu-ôlz in dhu béth-rúum, sôu uí níid tú écs-tra táu-ôlz énd sâm sôup)", "Além disso, só há duas toalhas de banho no banheiro, então precisamos de duas toalhas extras e um pouco de sabonete.", "<strong>Vocabulário de Quarto:</strong> Toalha de banho = <em>bath towel</em>; travesseiro = <em>pillow</em>; cobertor = <em>blanket</em>; cabide = <em>hanger</em>."],
+                    [80, "US", "I'll contact <b>housekeeping</b> immediately so they can bring fresh towels, soap, and shampoo.", "/aɪl ˈkɑːntækt ˈhaʊskiːpɪŋ ɪˈmiːdiətli soʊ ðeɪ kæn brɪŋ freʃ ˈtaʊəlz soʊp ænd ʃæmˈpuː/", "(Áil cón-téct ráus-quíi-pin i-míi-di-at-li sôu dhêi quén brín fréx táu-ôlz, sôup énd xém-pú)", "Vou contatar a governança/arrumação imediatamente para que tragam toalhas limpas, sabonete e xampu.", "<strong>Setor do Hotel:</strong> O setor de limpeza e arrumação de quartos chama-se <strong>Housekeeping</strong>."],
+                    [81, "BR", "One last question: how do we reset the <b>in-room safe</b> to lock our passports inside?", "/wʌn læst ˈkwestʃən | haʊ duː wiː ˌriːˈset ði ɪn ruːm seɪf tə lɑːk ˈaʊər ˈpæspɔːrts ɪnˈsaɪd/", "(Uãn lést qués-tchãn: ráu du uí ri-sét dhi in-rúum sêif tu lóc áu-er pés-pórts in-sáid?)", "Uma última pergunta: como nós redefinimos a senha do cofre do quarto para trancar nossos passaportes lá dentro?", "<strong>Duplo Sentido de 'Safe':</strong> Como adjetivo, <em>safe</em> é 'seguro'; como substantivo (<em>the safe</em>), significa <strong>o cofre</strong>!"],
+                    [82, "US", "Just type a four-digit code and press the pound key (#) while the safe door is open.", "/dʒʌst taɪp ə fɔːr ˈdɪdʒɪt koʊd ænd pres ðə paʊnd kiː waɪl ðə seɪf dɔːr ɪz ˈoʊpən/", "(Djâst táip a fór-dí-djit côud énd prés dhu páund quíi uáil dhu sêif dór iz ôu-pen)", "Basta digitar um código de quatro dígitos e apertar a tecla sustenido/jogo da velha (#) enquanto a porta do cofre estiver aberta.", "<strong>Teclas em Inglês:</strong> Nos EUA, o símbolo <strong>#</strong> em cofres e telefones é chamado de <strong>pound key</strong> (ou <em>hash key</em>)."],
+                    [83, "BR", "Got it, it worked! And if the technician can't fix the AC, could we <b>switch rooms</b>?", "/ɡɑːt ɪt ɪt wɜːrkt | ænd ɪf ðə tekˈnɪʃn kænt fɪks ði eɪ siː | kʊd wiː swɪtʃ ruːmz/", "(Gót it, it uârct! Énd if dhu tec-ní-xãn quént fícs dhi Êi-Síi, cúd uí suítch rúumz?)", "Entendi, funcionou! E se o técnico não conseguir consertar o ar-condicionado, nós poderíamos trocar de quarto?", "<strong>Expressão Útil:</strong> 'Trocar de quarto' ou 'trocar de lugar' em inglês usa muito o verbo <strong>switch</strong> (<em>switch rooms / switch seats</em>)."],
+                    [84, "US", "Absolutely! If he can't fix it in ten minutes, I'll upgrade you to a fifth-floor suite right away.", "/ˌæbsəˈluːtli | ɪf hiː kænt fɪks ɪt ɪn ten ˈmɪnɪts | aɪl ˈʌpɡreɪd juː tuː ə fɪfθ flɔːr swiːt raɪt əˈweɪ/", "(Éb-so-lút-li! If ríi quént fícs it in tén mí-nits, áil âp-grêid iu tu a fífth-flór suíit ráit a-uêi)", "Com toda certeza! Se ele não conseguir consertar em dez minutos, farei um upgrade de vocês para uma suíte no quinto andar imediatamente.", "<strong>Verbo de Viagem:</strong> <em>'Upgrade'</em> = melhorar de categoria (quarto ou assento de avião) sem pagar a mais."]
+                ]
+            },
+            {
+                actId: 5,
+                title: "Ato 5: Dicas na Recepção, Check-out, Contestando Cobrança e Despedida (Nível Avançado – Falas #85 a #104)",
+                items: [
+                    [85, "BR", "Good morning, Claire! The technician fixed the AC last night, and we <b>slept like a log</b>!", "/ɡʊd ˈmɔːrnɪŋ kler | ðə tekˈnɪʃn fɪkst ði eɪ siː læst naɪt | ænd wiː slept laɪk ə lɔːɡ/", "(Gúd mór-nin, Clér! Dhu tec-ní-xãn fícst dhi Êi-Síi lést náit, énd uí slépt láic a lóg!)", "Bom dia, Claire! O técnico consertou o ar-condicionado ontem à noite, e nós dormimos como uma pedra!", "<strong>Expressão Idiomática:</strong> 'Dormir como uma pedra' em inglês é <strong>sleep like a log</strong> (dormir como um tronco) ou <em>sleep like a baby</em>."],
+                    [86, "US", "I'm so glad to hear that! Oh, and your delayed suitcase arrived at midnight; here it is!", "/aɪm soʊ ɡlæd tə hɪr ðæt | oʊ ænd jɔːr dɪˈleɪd ˈsuːtkeɪs əˈraɪvd æt ˈmɪdnaɪt | hɪr ɪt ɪz/", "(Aim sôu gléd tu ríher dhét! Ôu, énd iór di-lêid sút-quêis a-ráivd ét míd-náit; ríher it iz!)", "Fico muito feliz em ouvir isso! Ah, e a sua mala atrasada chegou à meia-noite; aqui está ela!", "<strong>Preposição de Horário:</strong> Usamos sempre <strong>AT midnight</strong> (à meia-noite) e <strong>AT noon</strong> (ao meio-dia)."],
+                    [87, "BR", "That's wonderful! Had the airline lost that bag, my wife <b>would have had</b> to buy a whole new wardrobe!", "/ðæts ˈwʌndərfl | hæd ði ˈerlaɪn lɔːst ðæt bæɡ | maɪ waɪf wʊd həv hæd tə baɪ ə hoʊl nuː ˈwɔːrdroʊb/", "(Dhéts uân-der-fôl! Réd dhi ér-láin lóst dhét bég, mai uáif uúd rév réd tu bái a rôul nú uór-drôub!)", "Isso é maravilhoso! Se a companhia aérea tivesse perdido aquela mala, minha esposa teria tido que comprar um guarda-roupa inteiro novo!", "<strong>3rd Conditional com Inversão Avançada:</strong> <em>'Had the airline lost...'</em> equivale a <em>'If the airline had lost...'</em>!"],
+                    [88, "US", "Haha, crisis averted! Where are you and your family heading today?", "/hɑːhɑː ˈkraɪsɪs əˈvɜːrtɪd | wer ɑːr juː ænd jɔːr ˈfæməli ˈhedɪŋ təˈdeɪ/", "(Rá-rá, crái-sis a-vâr-ted! Uér ar iu énd iór fé-mi-li ré-din tu-dêi?)", "Haha, crise evitada! Para onde você e sua família estão indo hoje?", "<strong>Expressão excelente:</strong> <em>'Crisis averted!'</em> é muito usada quando um problema grande é resolvido a tempo."],
+                    [89, "BR", "We're going to the theme park this morning, and tonight we'd like to eat at a nice <b>local restaurant</b>.", "/wɪr ˈɡoʊɪŋ tə ðə θiːm pɑːrk ðɪs ˈmɔːrnɪŋ | ænd təˈnaɪt wiːd laɪk tuː iːt æt ə naɪs ˈloʊkl ˈrestrɑːnt/", "(Uíir gôu-in tu dhu thíim párc dhis mór-nin, énd tu-náit uíid láic tu íit ét a náis lôu-côl rés-tront)", "Vamos ao parque temático esta manhã, e hoje à noite gostaríamos de comer em um bom restaurante local.", "<strong>Contração de Would:</strong> <em>'We'd like to'</em> = <em>We would like to</em> (Nós gostaríamos de)."],
+                    [90, "US", "If you want to avoid tourist traps, I highly recommend a family diner three blocks down the street.", "/ɪf juː wɑːnt tuː əˈvɔɪd ˈtʊrɪst træps | aɪ ˈhaɪli ˌrekəˈmend ə ˈfæməli ˈdaɪnər θriː blɑːks daʊn ðə striːt/", "(If iu uónt tu a-vóid tú-rist tréps, ai rái-li ré-co-mênd a fé-mi-li dái-ner thríi blócs dáun dhu stríit)", "Se vocês quiserem evitar armadilhas para turistas (lugares caros e ruins), recomendo muito um restaurante tradicional a três quadras descendo a rua.", "<strong>Termo de Viagem:</strong> Lugar pega-turista (caro e de baixa qualidade) em inglês chama-se <strong>tourist trap</strong>!"],
+                    [91, "BR", "Awesome tip! Do we need to book a table in advance, or can we just <b>walk in</b>?", "/ˈɔːsəm tɪp | duː wiː niːd tə bʊk ə ˈteɪbl ɪn ədˈvæns | ɔːr kæn wiː dʒʌst wɔːk ɪn/", "(Ó-sâm típ! Du uí níid tu búc a têi-bôl in ad-véns, ór quén uí djâst uóc in?)", "Dica incrível! Precisamos reservar uma mesa com antecedência, ou podemos apenas chegar e entrar sem reserva?", "<strong>Vocabulário de Restaurante:</strong> <strong>In advance</strong> = com antecedência; <strong>walk in</strong> = chegar sem reserva prévia."],
+                    [92, "US", "On weekdays you can just walk in, and kids eat free on Tuesday nights!", "/ɑːn ˈwiːkdeɪz juː kæn dʒʌst wɔːk ɪn | ænd kɪdz iːt friː ɑːn ˈtuːzdeɪ naɪts/", "(Ón uíic-dêiz iu quén djâst uóc in, énd quíds íit fríi ón Túz-dêi náits!)", "Em dias de semana vocês podem entrar direto sem reserva, e crianças comem grátis nas terças à noite!", "<strong>Vocabulário:</strong> Dias de semana (segunda a sexta) = <strong>weekdays</strong>; fim de semana = <strong>weekend</strong>."],
+                    [93, "BR", "Fast forward four days... Good morning, Claire! We are ready to <b>check out</b> of room 408.", "/fæst ˈfɔːrwərd fɔːr deɪz | ɡʊd ˈmɔːrnɪŋ kler | wiː ɑːr ˈredi tə tʃek aʊt əv ruːm fɔːr oʊ eɪt/", "(Fést fór-uârd fór dêiz... Gúd mór-nin, Clér! Uí ar ré-di tu tchéc áut óv rúum fór-ôu-êit)", "Avançando quatro dias... Bom dia, Claire! Estamos prontos para fazer o check-out (fechar a estadia) do quarto 408.", "<strong>Check in vs. Check out:</strong> Você faz <em>check in</em> ao entrar no hotel e <strong>check out (of the room)</strong> ao encerrar a hospedagem."],
+                    [94, "US", "Good morning, Mr. Almeida! Did you and your family enjoy your stay with us?", "/ɡʊd ˈmɔːrnɪŋ ˈmɪstər | dɪd juː ænd jɔːr ˈfæməli ɪnˈdʒɔɪ jɔːr steɪ wɪθ ʌs/", "(Gúd mór-nin, Mís-ter Almeida! Did iu énd iór fé-mi-li en-djói iór stêi uídh âs?)", "Bom dia, Sr. Almeida! O senhor e sua família gostaram da estadia conosco?", "<strong>Substantivo 'Stay':</strong> Aqui <em>'your stay'</em> significa 'a sua estadia / hospedagem'."],
+                    [95, "BR", "We had a blast! Could I just <b>take a look</b> at the itemized bill before you charge my card?", "/wiː hæd ə blæst | kʊd aɪ dʒʌst teɪk ə lʊk æt ði ˈaɪtəmaɪzd bɪl bɪˈfɔːr juː tʃɑːrdʒ maɪ kɑːrd/", "(Uí réd a blést! Cúd ai djâst têic a lúc ét dhi ái-te-máizd bíl bi-fór iu tchárdj mai cárd?)", "Nós nos divertimos demais! Eu poderia só dar uma olhada na fatura detalhada antes de você cobrar no meu cartão?", "<strong>Vocabulário Financeiro:</strong> <em>'Itemized bill / receipt'</em> = conta detalhada item por item."],
+                    [96, "US", "Of course! Here is the printout of your charges.", "/əv kɔːrs | hɪr ɪz ðə ˈprɪntaʊt əv jɔːr ˈtʃɑːrdʒɪz/", "(Óv córs! Ríher iz dhu prínt-áut óv iór tchár-djiz)", "Claro! Aqui está a folha impressa das suas cobranças.", "<strong>Duplo Sentido de 'Charge':</strong> <em>Charge</em> pode ser carregar bateria ou <strong>cobrar / cobrança financeira</strong>."],
+                    [97, "BR", "Excuse me, I think there's a mistake here. We were <b>charged</b> $35 for the minibar, but we didn't touch it.", "/ɪkˈskjuːz miː aɪ θɪŋk ðerz ə mɪˈsteɪk hɪr | wiː wɜːr tʃɑːrdʒd ˈθɜːrti faɪv ˈdɑːlərz fɔːr ðə ˈmɪnibɑːr | bʌt wiː ˈdɪdnt tʌtʃ ɪt/", "(Ecs-quiúz mi, ai thínk dhérz a mis-têic ríher. Uí uâr tchárdjd thâr-ti-fáiv dó-lars fór dhu mí-ni-bár, bât uí dí-dânt tâtch it)", "Com licença, acho que há um engano aqui. Fomos cobrados em 35 dólares pelo frigobar, mas nós não tocamos nele.", "<strong>Como contestar com educação:</strong> Dizer <em>'I think there's a mistake here'</em> resolve qualquer cobrança indevida sem criar conflito!"],
+                    [98, "US", "Let me check... Oh, my apologies! That charge belonged to room 406. I've just <b>removed</b> it from your bill.", "/let miː tʃek | oʊ maɪ əˈpɑːlədʒiz | ðæt tʃɑːrdʒ bɪˈlɔːŋd tə ruːm fɔːr oʊ sɪks | aɪv dʒʌst rɪˈmuːvd ɪt frʌm jɔːr bɪl/", "(Lét mi tchéc... Ôu, mai a-pó-lo-djiz! Dhét tchárdj bi-lóngd tu rúum fór-ôu-sícs. Áiv djâst ri-múvd it frâm iór bíl)", "Deixe-me verificar... Oh, mil desculpas! Essa cobrança pertencia ao quarto 406. Acabei de removê-la da sua conta.", "<strong>Present Perfect com 'Just':</strong> <em>'I've just removed it'</em> = Acabei de remover agora mesmo."],
+                    [99, "BR", "Thank you for fixing that! Our flight is only at 9 PM tonight. Can we <b>store our luggage</b> here until 5 PM?", "/θæŋk juː fɔːr ˈfɪksɪŋ ðæt | ˈaʊər flaɪt ɪz ˈoʊnli æt naɪn piː em təˈnaɪt | kæn wiː stɔːr ˈaʊər ˈlʌɡɪdʒ hɪr ənˈtɪl faɪv piː em/", "(Thénk iu fór fíc-sin dhét! Áu-er fláit iz ôun-li ét náin píi-ém tu-náit. Quén uí stór áu-er lâ-guedj ríher ân-tíl fáiv píi-ém?)", "Obrigado por corrigir isso! Nosso voo é só às 21h hoje à noite. Podemos guardar nossas malas aqui até as 17h?", "<strong>Dica de Ouro para o Último Dia:</strong> Todo hotel guarda suas malas após o check-out se você perguntar: <em>'Can we store/leave our luggage here?'</em>"],
+                    [100, "US", "Absolutely! We will keep your bags locked in our <b>luggage storage room</b> free of charge.", "/ˌæbsəˈluːtli | wiː wɪl kiːp jɔːr bæɡz lɑːkt ɪn ˈaʊər ˈlʌɡɪdʒ ˈstɔːrɪdʒ ruːm friː əv tʃɑːrdʒ/", "(Éb-so-lút-li! Uí uíl quíip iór bégz lóct in áu-er lâ-guedj stó-ridj rúum fríi óv tchárdj)", "Com certeza! Manteremos suas malas trancadas em nossa sala de guarda-volumes gratuitamente.", "<strong>Expressão útil:</strong> <em>'Free of charge'</em> = gratuitamente / sem nenhuma cobrança."],
+                    [101, "BR", "That helps us a lot! Now we can do some last-minute souvenir shopping without dragging heavy bags around.", "/ðæt helps ʌs ə lɑːt | naʊ wiː kæn duː sʌm læst ˈmɪnɪt ˌsuːvəˈnɪr ˈʃɑːpɪŋ wɪˈðaʊt ˈdræɡɪŋ ˈhevi bæɡz əˈraʊnd/", "(Dhét rélps âs a lót! Náu uí quén dú sâm lést-mí-nit su-ve-níer xó-pin uí-dháut dré-guin ré-vi bégz a-ráund)", "Isso nos ajuda muito! Agora podemos fazer umas compras de lembrancinhas de última hora sem arrastar malas pesadas por aí.", "<strong>Collocation:</strong> Fazer compras usa o verbo DO ou GO: <strong>do some shopping / go shopping</strong>."],
+                    [102, "US", "Here are your claim tickets for the four suitcases, and your zero-balance receipt has been emailed to you.", "/hɪr ɑːr jɔːr kleɪm ˈtɪkɪts fɔːr ðə fɔːr ˈsuːtkeɪsɪz | ænd jɔːr ˈzɪroʊ ˈbæləns rɪˈsiːt hæz bɪn ˈiːmeɪld tə juː/", "(Ríher ar iór clêim tí-quets fór dhu fór sút-quêi-siz, énd iór zíi-rou bé-lans ri-síit réz bín í-meild tu iu)", "Aqui estão os comprovantes para retirar as quatro malas, e o seu recibo com saldo zerado foi enviado por e-mail para você.", "<strong>🚨 Pronúncia de 'RECEIPT':</strong> Na palavra <strong>receipt</strong> (recibo/comprovante), a letra <strong>P é 100% muda</strong>! Diga <strong>/rɪˈsiːt/ ('ri-síit')</strong>!"],
+                    [103, "BR", "Everything is crystal clear! Thank you for the outstanding service during our whole stay, Claire.", "/ˈevriθɪŋ ɪz ˈkrɪstl klɪr | θæŋk juː fɔːr ði aʊtˈstændɪŋ ˈsɜːrvɪs ˈdʊrɪŋ ˈaʊər hoʊl steɪ kler/", "(É-vri-thin iz crís-tôl clíer! Thénk iu fór dhi áut-stén-din sâr-vis dú-rin áu-er rôul stêi, Clér)", "Está tudo perfeitamente claro (cristalino)! Obrigado pelo atendimento excepcional durante toda a nossa estadia, Claire.", "<strong>Vocabulário Avançado:</strong> <em>'Crystal clear'</em> = super claro; <em>'outstanding'</em> = excelente / excepcional."],
+                    [104, "US", "It was our pleasure having your family here, Mr. Almeida! Have a safe trip back to Brazil and come back soon!", "/ɪt wəz ˈaʊər ˈpleʒər ˈhævɪŋ jɔːr ˈfæməli hɪr ˈmɪstər | hæv ə seɪf trɪp bæk tə brəˈzɪl ænd kʌm bæk suːn/", "(It uóz áu-er plé-jer ré-vin iór fé-mi-li ríher, Mís-ter Almeida! Rév a sêif tríp béc tu Bra-zíl énd câm béc súun!)", "Foi um prazer receber a sua família aqui, Sr. Almeida! Tenham uma ótima viagem de volta ao Brasil e voltem em breve!", "<strong>Fechamento com Chave de Ouro:</strong> <em>'Have a safe trip back!'</em> é a despedida padrão para desejar um retorno seguro para casa!"]
+                ]
+            }
+        ];
+
+        // ============================================================================
+        // RENDERIZAÇÃO DAS 104 FALAS EM TABELAS ORGANIZADAS POR ATO
+        // ============================================================================
+        const container = document.getElementById('dialogue-container');
+        let htmlOutput = '';
+
+        dialogueActs.forEach(act => {
+            htmlOutput += `
+            <div class="act-block" id="act-${act.actId}">
+                <div class="act-header-bar">
+                    <h2 class="act-title">${act.title}</h2>
+                    <button class="play-act-btn" id="btn-act-${act.actId}" onclick="playEntireAct(${act.actId})">▶ Ouvir Este Ato Inteiro</button>
+                </div>
+                <div class="table-responsive-wrapper">
+                    <table class="dialogue-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 45%;">Interlocutor e Fala em Inglês (Áudio)</th>
+                                <th style="width: 55%;">Pronúncia (IPA + Simplificada), Tradução e Dica do Professor</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+
+            act.items.forEach(item => {
+                const num = item[0];
+                const speaker = item[1]; // "BR" ou "US"
+                const enHtml = item[2];
+                const ipa = item[3];
+                const phonetic = item[4];
+                const pt = item[5];
+                const tip = item[6];
+
+                const isBr = speaker === "BR";
+                const rowClass = isBr ? "row-br" : "row-us";
+                const badgeClass = isBr ? "speaker-br" : "speaker-us";
+                const speakerName = isBr ? "🇧🇷 Bruno (Viajante Brasileiro)" : "🇺🇸 Claire (Aeroporto / Imigração / Hotel)";
+                const pitchVal = isBr ? 0.93 : 1.07;
+
+                const cleanAudioText = enHtml.replace(/<\/?b>/g, '').replace(/\(#\)/g, '').replace(/'/g, "\\'");
+
+                htmlOutput += `
+                            <tr class="dialogue-row ${rowClass}" data-search="${enHtml.toLowerCase()} ${pt.toLowerCase()} ${tip.toLowerCase()} ${act.title.toLowerCase()}">
+                                <td>
+                                    <div>
+                                        <span class="turn-num">#${num}</span>
+                                        <span class="speaker-tag ${badgeClass}">${speakerName}</span>
+                                    </div>
+                                    <span class="sentence-en">${enHtml}</span>
+                                    <button class="audio-btn-inline" onclick="playAudio('${cleanAudioText}', ${pitchVal})" title="Ouvir fala #${num}">🔊</button>
+                                </td>
+                                <td>
+                                    <span class="ipa-symbol">${ipa}</span>
+                                    <span class="character-portuguese-phonetics">${phonetic}</span>
+                                    <span class="details-translation">${pt}</span>
+                                    <span class="teacher-tip">💡 ${tip}</span>
+                                </td>
+                            </tr>`;
+            });
+
+            htmlOutput += `
+                        </tbody>
+                    </table>
+                </div>
+            </div>`;
+        });
+
+        container.innerHTML = htmlOutput;
+
+        // ============================================================================
+        // FILTRO DE PESQUISA EM TEMPO REAL NAS 104 FALAS
+        // ============================================================================
+        function filterDialogue() {
+            const query = document.getElementById('dialogueSearch').value.toLowerCase();
+            const actBlocks = document.querySelectorAll('.act-block');
+
+            actBlocks.forEach(block => {
+                const rows = block.querySelectorAll('.dialogue-row');
+                let visibleRows = 0;
+
+                rows.forEach(row => {
+                    const text = row.getAttribute('data-search');
+                    if (text.includes(query)) {
+                        row.style.display = '';
+                        visibleRows++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                block.style.display = visibleRows > 0 ? 'block' : 'none';
+            });
+        }
+
+        // ============================================================================
+        // SINTETIZADOR DE VOZ (INDIVIDUAL E SEQUENCIAL POR ATO)
+        // ============================================================================
+        let voices = [];
+        let isPlayingSequence = false;
+        let currentActPlaying = null;
+
+        function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+        loadVoices();
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = loadVoices;
+        }
+
+        function getBestEnglishVoice() {
+            if (voices.length === 0) loadVoices();
+            let targetVoice = voices.find(voice => 
+                (voice.name.includes('Google') || voice.name.includes('Premium') || voice.name.includes('Samantha')) 
+                && voice.lang.includes('en-US')
+            );
+            if (!targetVoice) targetVoice = voices.find(voice => voice.lang === 'en-US');
+            if (!targetVoice) targetVoice = voices.find(voice => voice.lang.startsWith('en'));
+            return targetVoice;
+        }
+
+        function playAudio(text, pitch = 1) {
+            stopSequence();
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.86;
+                utterance.pitch = pitch;
+
+                const targetVoice = getBestEnglishVoice();
+                if (targetVoice) {
+                    utterance.voice = targetVoice;
+                    utterance.lang = targetVoice.lang;
+                } else {
+                    utterance.lang = 'en-US';
+                }
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        function stopSequence() {
+            isPlayingSequence = false;
+            if (currentActPlaying !== null) {
+                const btn = document.getElementById(`btn-act-${currentActPlaying}`);
+                if (btn) {
+                    btn.textContent = "▶ Ouvir Este Ato Inteiro";
+                    btn.classList.remove('stop');
+                }
+                currentActPlaying = null;
+            }
+        }
+
+        function playEntireAct(actId) {
+            if (isPlayingSequence && currentActPlaying === actId) {
+                window.speechSynthesis.cancel();
+                stopSequence();
+                return;
+            }
+
+            window.speechSynthesis.cancel();
+            stopSequence();
+
+            const actObj = dialogueActs.find(a => a.actId === actId);
+            if (!actObj) return;
+
+            isPlayingSequence = true;
+            currentActPlaying = actId;
+            const btn = document.getElementById(`btn-act-${actId}`);
+            if (btn) {
+                btn.textContent = "⏹ Parar Áudio do Ato";
+                btn.classList.add('stop');
+            }
+
+            let index = 0;
+            function speakNext() {
+                if (!isPlayingSequence || index >= actObj.items.length) {
+                    stopSequence();
+                    return;
+                }
+                const item = actObj.items[index];
+                const isBr = item[1] === "BR";
+                const cleanText = item[2].replace(/<\/?b>/g, '').replace(/\(#\)/g, '');
+                const utterance = new SpeechSynthesisUtterance(cleanText);
+                utterance.rate = 0.86;
+                utterance.pitch = isBr ? 0.93 : 1.07;
+
+                const targetVoice = getBestEnglishVoice();
+                if (targetVoice) {
+                    utterance.voice = targetVoice;
+                    utterance.lang = targetVoice.lang;
+                } else {
+                    utterance.lang = 'en-US';
+                }
+
+                utterance.onend = () => {
+                    index++;
+                    if (isPlayingSequence) {
+                        setTimeout(speakNext, 450);
+                    }
+                };
+
+                window.speechSynthesis.speak(utterance);
+            }
+
+            speakNext();
+        }
+    </script>
+</body>
+</html>
